@@ -17,3 +17,7 @@ def reverse_def(request):
 
 def reverse_lazy_def(request):
     return HttpResponseRedirect(reverse_lazy('httpresponse_for_reverse'))
+
+
+class AboutPageView(TemplateView): # new
+    template_name = 'about.html'
